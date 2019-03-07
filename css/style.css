@@ -1,0 +1,116 @@
+body {
+  background-color: skyblue;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 16px;
+}
+
+header {
+  width: 100%;
+  border-bottom: 2px double dodgerblue;
+  text-align: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  height: 100px;
+  background-color: white;
+}
+
+header h1 {
+  margin: 10px auto 0 auto;
+}
+
+section {
+  width: 80%;
+  margin: 100px auto 10px auto;
+  display: grid;
+  grid-template-columns: 40% 40% 20%;
+  align-content: center;
+}
+
+section p:nth-of-type(1) {
+  grid-column: 1;
+  margin-left: 20px;
+}
+
+section img {
+  grid-column: 2;
+  margin: 20px 10px;
+  width: 90%;
+}
+
+section aside {
+  grid-column: 3;
+  margin-left: 20px;
+  background-color: lightgray;
+}
+
+aside ul {
+  margin-block-start: 0px;
+}
+
+form {
+  width: 400px;
+  margin: 40px auto;
+  border-radius: 10px;
+  background-color: #eee;
+  border: 2px 
+}
+
+form > h2 {
+  border-bottom: 1px solid;
+  padding: 5px 10px;
+  text-align: center;
+}
+
+.form-group {
+  margin: 5px auto;
+}
+
+form label:not([for=photoPreference]) {
+  padding-left: 10px;
+  width: 30%;
+  display: inline-block;
+}
+
+label[for=photoPreference] {
+  padding-left: 10px;
+}
+
+form input {
+  width: 60%;
+  border: 1px solid dodgerblue;
+  border-radius: 3px;
+  box-shadow: none;
+  padding-left: 5px;
+}
+
+button {
+  margin: 10px auto;
+  border-radius: 3px;
+  padding: 10px;
+  box-shadow: inset 2x 2x #333;
+  border: none;
+}
+
+button:hover {
+  background-color: dodgerblue;
+  cursor: pointer;
+}
+
+.submit {
+  width: 100%;
+  text-align: center;
+}
+
+footer {
+  background-color: lightgreen;
+  position: absolute;
+  box-sizing: border-box;
+  width: 100%;
+  height: 75px;
+  left: 0px;
+  text-align: right;
+  align-content: center;
+  padding: 10px 30px;
+}
+
